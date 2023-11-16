@@ -12,7 +12,7 @@ public class AnotacaoPreferencias {
 
     private SharedPreferences.Editor editor;
 
-    private final String NOME_ARQUIVO = "anotcao.preferencias";
+    private final String NOME_ARQUIVO = "anotacao.preferencias";
 
     private final String CHAVE_NOME = "nome";
 
@@ -32,7 +32,7 @@ public class AnotacaoPreferencias {
     }
     //Recuperar uma anotacao
     public String recuperarAnotacao(){
-        return "";
+        return preferences.getString(CHAVE_NOME,"");
     }
 
     //
